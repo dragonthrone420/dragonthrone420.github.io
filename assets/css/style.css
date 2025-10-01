@@ -47,6 +47,14 @@ img{max-width:100%;height:auto;display:block}
 .list{margin:0;padding-left:18px}
 .prose h1,.prose h2,.prose h3{scroll-margin-top:100px}
 
+.pdf-embed {
+  width: 100%;
+  height: min(90vh, 1000px);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+
 @media (max-width:780px){
   .hero{grid-template-columns:1fr}
   .split{grid-template-columns:1fr}
