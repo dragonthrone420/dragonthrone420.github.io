@@ -80,6 +80,12 @@ img{max-width:100%;height:auto;display:block}
   object-fit:cover;         /* crops to fill without distortion */
   display:block;
 }
+.project .thumb-small img{
+  width:50%;
+  height:50%;
+  object-fit:cover;         /* crops to fill without distortion */
+  display:block;
+}
 .list{margin:0;padding-left:18px}
 .prose h1,.prose h2,.prose h3{scroll-margin-top:100px}
 
