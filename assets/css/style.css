@@ -13,7 +13,12 @@ a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 img{max-width:100%;height:auto;display:block}
 
-.container{max-width:1000px;margin:0 auto;padding:24px}
+.container{
+  width: 75vw;            /* use 75% of the screen */
+  max-width: 1400px;      /* optional: cap on very wide monitors */
+  margin: 0 auto;         /* keep it centered */
+  padding: 24px;
+}
 .header-row{display:flex;align-items:center;justify-content:space-between}
 .brand{font-weight:800;letter-spacing:.5px}
 .nav-toggle{display:none;background:none;border:0;font-size:22px;color:var(--text)}
@@ -21,8 +26,15 @@ img{max-width:100%;height:auto;display:block}
 .nav a{padding:8px 10px;border-radius:10px}
 .nav a.active, .nav a:hover{background:var(--card)}
 
-.site-header{position:sticky;top:0;background:rgba(11,13,16,.85);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);z-index:10}
+.site-header .container{
+  width: 75vw;
+  max-width: 1400px;
+}
 .site-footer{border-top:1px solid var(--border);margin-top:48px;padding:16px 0}
+@media (max-width: 900px){
+  .container,
+  .site-header .container{ width: 92vw; max-width: none; }
+}
 
 .hero{display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:center;margin-top:18px;margin-bottom:28px}
 .avatar{width:120px;height:120px;border-radius:50%;border:3px solid var(--border);object-fit:cover}
@@ -48,7 +60,7 @@ img{max-width:100%;height:auto;display:block}
 }
 
 /* One column on small screens */
-@media (max-width:1500px){
+@media (max-width:900px){
   .grid{ grid-template-columns:1fr; }
 }
 
