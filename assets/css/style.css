@@ -55,7 +55,7 @@ img{max-width:100%;height:auto;display:block}
 .split{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0}
 .grid{
   display:grid;
-  grid-template-columns:repeat(2, minmax(0,1fr)); /* two equal columns */
+  grid-template-columns:repeat(1, minmax(0,1fr)); /* two equal columns */
   gap:24px;
 }
 
@@ -67,7 +67,7 @@ img{max-width:100%;height:auto;display:block}
 .project{ display:flex; flex-direction:column; }
 .project .thumb{
   width:100%;
-  aspect-ratio:16 / 9;     /* consistent shape */
+  /* aspect-ratio:16 / 9;     consistent shape */
   overflow:hidden;
   border:1px solid var(--border);
   border-radius:12px;
