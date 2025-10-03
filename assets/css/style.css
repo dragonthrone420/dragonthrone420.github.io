@@ -48,7 +48,7 @@ img{max-width:100%;height:auto;display:block}
 }
 
 /* One column on small screens */
-@media (max-width:900px){
+@media (max-width:1500px){
   .grid{ grid-template-columns:1fr; }
 }
 
