@@ -80,9 +80,18 @@ img{max-width:100%;height:auto;display:block}
   object-fit:cover;         /* crops to fill without distortion */
   display:block;
 }
+.project .thumb-small{
+  width:25%;
+  /* aspect-ratio:16 / 9;     consistent shape */
+  overflow:hidden;
+  border:1px solid var(--border);
+  border-radius:12px;
+  margin:0 0 12px 0;
+  background:rgba(255,255,255,.02);
+}
 .project .thumb-small img{
-  width:50%;
-  height:50%;
+  width:25%;
+  height:25%;
   object-fit:cover;         /* crops to fill without distortion */
   display:block;
 }
