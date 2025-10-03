@@ -81,7 +81,7 @@ img{max-width:100%;height:auto;display:block}
   display:block;
 }
 .project .thumb-small{
-  width:25%;
+  width:100%;
   /* aspect-ratio:16 / 9;     consistent shape */
   overflow:hidden;
   border:1px solid var(--border);
